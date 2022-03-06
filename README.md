@@ -1,2 +1,2 @@
 # school
-szkoła Xd
+Yes
