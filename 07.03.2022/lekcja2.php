@@ -31,5 +31,21 @@ SCHOOL;
     echo "Długość imienia ".ltrim($name)." wynosi: ".strlen(ltrim($name))."<br>"; //Usuwa lewa
     echo "Długość imienia ".rtrim($name)." wynosi: ".strlen(rtrim($name))."<br>"; //Usuwa Prawa
     echo "Długość imienia ".trim($name)." wynosi: ".strlen(trim($name))."<br>";
-    
+    //substring
+    $name="Janusz";
+    echo substr($name, 0, 3)."<br>";
+    echo substr($name, 1, 4)."<br>";
+    //str_replace
+    $name="Janusz";
+    $surname="Kowalski";
+    $wyjscie=" *** ";
+    echo str_replace($name, $wyjscie, "Janusz tekst jest Anna Janusz bo Janusz to Janusz")."<br>";
+    //tabela
+    $tab=["ą", "ę"];
+    $replace=["a", "e"];
+    echo str_replace($replace, $tab, "Jest dobrze wiem o tym esa z toba widz")."<br>";
+    //wyciaganie domeny
+    $mail="januszkowalski@zsl.poznan.pl";
+    echo $mail."<br>";
+    echo substr($mail, strpos($mail, "@")+1, 999)."<br>"; //domena
 ?>
