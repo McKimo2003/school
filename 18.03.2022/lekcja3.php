@@ -13,6 +13,7 @@
                 </select>
                 <input type="radio" name="gender" value="man" checked>Mężczyzna
                 <input type="radio" name="gender" value="woman">Kobieta
+                <input type="checkbox" name="terms">Regulamin<br><br>
                 <input type="submit" value="Zatwierdź">
             </form>
     </body> 
